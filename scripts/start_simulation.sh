@@ -22,4 +22,4 @@ done
 sleep 5
 # Start the client
 echo "Starting client"
-go run cmd/client/main.go "0-15000"
+go run cmd/client/main.go "14-1500"
