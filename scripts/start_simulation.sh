@@ -6,6 +6,10 @@ NUM_SERVERS=16
 # Define the range of ports for the servers
 START_PORT=5000
 END_PORT=$((START_PORT+NUM_SERVERS-1))
+
+# Create logs and logs/servers directories if they do not exist
+mkdir -p logs/servers
+
 rm -rf logs/*.log
 for (( port=START_PORT; port<=END_PORT; port++ ))
 do
